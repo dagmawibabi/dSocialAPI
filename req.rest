@@ -1,0 +1,5 @@
+# GET http://localhost:3000/getMessages/4/3
+
+GET http://localhost:3000/requestData/1/3
+
+GET http://localhost:3000/giveData/3/supp
