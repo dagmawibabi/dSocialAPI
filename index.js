@@ -55,7 +55,7 @@ app.get('/ds/getMessages/:user1/:user2', (req, res) => {
 app.get('/ds/giveData/:userID/:data', (req, res) => {
     for(i of requests){
         if (i['requestedFrom'] == req.params.userID){
-            i['result'] = req.params.data
+            i['result'] = json.stringify(req.params.data);
         }
     }
     res.send('given');

@@ -1,5 +1,7 @@
 # GET http://localhost:3000/getMessages/4/3
 
-GET http://localhost:3000/requestData/1/3
+# GET http://localhost:3000/requestData/1/3
 
-GET http://localhost:3000/giveData/3/supp
+# GET http://localhost:3000/giveData/1/supp
+
+GET https://decsoc.herokuapp.com/ds/giveData/2/[{'id':'2','message':'cunt'}]
