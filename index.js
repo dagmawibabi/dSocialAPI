@@ -88,7 +88,7 @@ app.get('/ds/requestData/:userID/:fromID', (req, res) => {
         for(let i = 0; i < requests.length; i++){
             if (requests[i]['requestedBy'] == req.params.userID && requests[i]['requestedFrom'] == req.params.fromID){
                 if(requests[i]['result'] != ''){
-                    response = JSON.stringify(requests[i]['result']);
+                    response = requests[i]['result'];
                     requests[i]['isSent'] = true;
                 } else {
                     response = 'no peer yet';
